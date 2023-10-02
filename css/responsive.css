@@ -4,21 +4,37 @@ Medium Screen - Others
 ====================================
 */
 
-@media screen and (min-width: 1200px) and (max-width: 1450px) {
+@media screen and (min-width: 1300px) and (max-width: 1450px) {
   .logo img {
-    width: 180px;
+    width: 165px;
   }
 
-  nav ul li a {
-    margin: 0px 12px;
+  nav {
+    margin-left: -62px;
+  }
+
+  .header_wrapper {
+    padding: 0px 0px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .logo img {
+    width: 120px;
   }
 
   nav {
     margin-top: -5px;
+    margin-left: -15px;
   }
 
   .login a {
-    margin-top: -5px;
+    position: relative;
+    top: 3px;
+  }
+
+  .header_wrapper {
+    padding: 0px 0px;
   }
 }
 
@@ -36,12 +52,15 @@ Medium Screen - Others
     font-size: 14px;
     padding: 4px 10px;
     position: relative;
-    top: -3px;
+    top: 3px;
   }
 
   nav {
     position: relative;
     top: -3px;
+    max-width: 668px;
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -221,6 +240,14 @@ Small Screen - Tablate
 
   .p2daex_para p {
     display: none;
+  }
+
+  .p1service_block_one img {
+    width: 80px;
+  }
+
+  .p1service_block_one h6 {
+    font-size: 14px;
   }
 }
 
@@ -867,5 +894,9 @@ Xtra Small Screen - Small Mobile
 
   .acclink ul li a {
     font-size: 13px;
+  }
+
+  .offcanvas-end {
+    width: 300px;
   }
 }

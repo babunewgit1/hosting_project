@@ -71,7 +71,7 @@ label {
 }
 
 .container {
-  max-width: 900px !important;
+  max-width: 925px;
 }
 
 /* -- header area start -- */
@@ -90,8 +90,10 @@ header {
   width: 212px;
 }
 
-nav ul li {
-  display: inline-block;
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 nav ul li a {
@@ -99,8 +101,15 @@ nav ul li a {
   font-size: 16px;
   font-weight: 700;
   color: #000;
-  margin: 0px 31px;
   transition: all 0.2s ease;
+}
+
+nav ul li:first-child a {
+  margin-left: 0;
+}
+
+nav ul li:right-child a {
+  margin-right: 0;
 }
 
 nav ul li.active a {
@@ -120,6 +129,8 @@ nav ul li a:hover {
   padding: 5px 18px;
   border-radius: 36px;
   transition: all 0.2s ease;
+  position: relative;
+  top: 3px;
 }
 
 .login a:hover {
@@ -157,6 +168,10 @@ nav ul li a:hover {
 
 nav {
   margin-top: -6px;
+  max-width: 925px;
+  margin-left: -108px;
+  width: 100%;
+  padding: 0px 13px;
 }
 
 /* -- header area end -- */
@@ -437,15 +452,18 @@ footer {
   color: #000;
 }
 
-.p2search_box_left span {
+.p2search_box_left select {
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
   color: #000;
   background-color: #dbdbdb;
   border-radius: 0px 0px 0px 0px;
-  padding: 8px 15px;
-  padding-right: 40px;
+  padding: 11px 14px;
+  padding-right: 30px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
 
 .p2search_box_right button {
@@ -559,6 +577,11 @@ footer {
   padding: 2px 16px;
   font-weight: 700;
   margin-top: 10px;
+  transition: all 0.2s ease;
+}
+
+.p2domain_price_right_block_right a:hover {
+  opacity: 0.7;
 }
 
 .p2domain_price_right_block_two {
@@ -593,34 +616,28 @@ footer {
   margin-top: 20px;
 }
 
-.p2daex_block table {
-  width: 100%;
-  table-layout: fixed;
+.p2dex_block_heading,
+.p2dex_block_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.p2daex_block table tr td:last-child {
-  text-align: right;
-}
-
-.p2daex_block table tr th:last-child {
-  text-align: right;
-}
-
-.p2daex_block table tr th {
+.p2dex_block_heading p {
   font-size: 14px;
   font-weight: 700;
   padding: 8px 8px;
+  margin-bottom: 10px;
 }
 
-.p2daex_block table tr td {
+.p2dex_block_wrapper p {
   font-size: 14px;
   padding: 2px 8px;
 }
 
-.p2daex_block table tr:nth-child(even) td {
+.p2dex_block_wrapper:nth-child(even) {
   background-color: #f4f4f4;
 }
-
 .p2daex_para p {
   font-size: 14px;
   color: #555;
@@ -636,6 +653,32 @@ footer {
 
 .p2daex_para p a:hover {
   opacity: 0.7;
+}
+
+.mobile_logo a img {
+  display: block;
+  width: 175px;
+}
+
+.mobile_menu ul li a {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+  transition: all 0.2s ease;
+}
+
+.mobile_menu ul li.active a {
+  color: #00a3e0;
+}
+
+.mobile_menu ul li a:hover {
+  color: #00a3e0;
+}
+
+.btn-close:focus {
+  box-shadow: none;
 }
 
 /* -- p2domain_extention area end -- */
